@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 16</title>
+    <script>
+        function sumarRango(inicio, final) {
+            let rango = 0;
+            for (let i = inicio; i <= final; i++) {
+                rango += i;
+            }
+            return rango;
+        }
+        let inicio = parseInt(prompt("Ingrese el inicio del rango"));
+        let final = parseInt(prompt("Ingrese el final del rango"));
+        alert("La suma del rango es de " + sumarRango(inicio, final));
+    </script>
+</head>
+<body>
+    <p>Ejercicio 16</p>
+</body>
+</html>
