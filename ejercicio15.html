@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 15</title>
+    <script>
+        let numero = prompt("Ingrese un número del 1 al 12:");
+        function retonarmes(numero)
+        {
+            const meses = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio"
+            , "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
+            numero = parseInt(numero);
+            if (numero >= 1 && numero <= 12) {
+            return meses[numero - 1];
+            } else {
+            return "Incorrecto";
+            } 
+
+        }
+       alert("El mes es: " + retonarmes(numero));
+        
+    </script>
+</head>
+<body>
+    <p>Ejercicio 15</p>
+</body>
