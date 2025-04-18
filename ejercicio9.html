@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Bienvenida</title>
+    <script>
+        // Solicitar el nombre al usuario con prompt
+        const nombreUsuario = prompt("Por favor, ingresa tu nombre:");
+        
+        // Mostrar mensaje de bienvenida en consola y en un alert
+        if (nombreUsuario) {
+            console.log(`Hola ${nombreUsuario}, bienvenido a Programación Visual!`);
+            alert(`Hola ${nombreUsuario}, bienvenido a Programación Visual!`);
+        } else {
+            console.log("No ingresaste un nombre válido.");
+            alert("¡Debes ingresar tu nombre!");
+        }
+    </script>
+</head>
+<body>
+    <!-- El contenido de la página (opcional) -->
+    <h1>Ejercicio de Bienvenida</h1>
+    <p>Abre la consola (F12) para ver el mensaje.</p>
+</body>
+</html>
