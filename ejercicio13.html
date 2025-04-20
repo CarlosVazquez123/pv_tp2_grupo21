@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 13</title>
+    <script>
+        function mostrarArreglo(arreglo) {
+            const contenedor = document.getElementById("resultado");
+            contenedor.innerHTML = ""; // Limpiar antes de mostrar
+            arreglo.forEach(numero => {
+                const linea = document.createElement("p");
+                linea.textContent = numero;
+                contenedor.appendChild(linea);
+            });
+        }
+        document.addEventListener("DOMContentLoaded", () => {
+            let cantidad = parseInt(prompt("¿Cuántos números querés ingresar?"));
+            const numeros = [];
+            for (let i = 0; i < cantidad; i++) {
+                let num = parseFloat(prompt(`Ingresá el número ${i + 1}:`));
+                numeros.push(num);
+            }
+            mostrarArreglo(numeros);
+        });
+    </script>
+</head>
+<body>
+    <h2>Ejercicio 13</h2>
+    <div id="resultado"></div>
+</body>
+</html>
+
